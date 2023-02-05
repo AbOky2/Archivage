@@ -51,7 +51,7 @@ export default function PostCard({ post }) {
     };
     return (
         <>
-            <li className='bg-gray-600 mb-4 items-center p-4 flex flex-col rounded-xl w-full border border-1'>
+            <li className='bg-gray-500 mb-4 items-center p-4 flex flex-col rounded-xl w-full border border-1'>
                 <h3 className='text-[30px] font-bold'>{post.title}</h3>
                 <p className=' text-base'>{post.content}</p>
                 <small>{new Date(post.createdAt).toLocaleDateString()}</small>

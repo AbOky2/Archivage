@@ -122,8 +122,8 @@ export default function AddPost() {
 
                     {/* <FileUpload name="demo" url="./upload"></FileUpload> */}
 
-                    <div className={styles.formItem}>
-                        <button type="submit" >Ajout du poste</button>
+                    <div >
+                        <button className=" bg-green-800 rounded-xl p-4 hover:bg-green-400" type="submit" >Ajout du poste</button>
                     </div>
                 </form>
             </div>
