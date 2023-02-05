@@ -1,4 +1,8 @@
+// {
+//   "extends": ["next/babel","next/core-web-vitals", "next", "prettier"],
+//   "plugins": ["prettier"]
+// }
+
 {
-  "extends": ["next/babel","next/core-web-vitals", "next", "prettier"],
-  "plugins": ["prettier"]
-}
+  "parser": "babel-eslint"
+ }
