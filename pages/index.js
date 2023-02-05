@@ -13,12 +13,17 @@ export default function Home({ posts }) {
 
             <Nav />
 
+            <div className='bg-white  w-full text-[30px] p-4 items-center text-center font-bold text-green-900 mt-16'>
+                Bienvenue dans la plateforme d'archivage. Ici vous pouvez consulter et archiver des documents.
+
+            </div>
+
             <main>
-                <div className={styles.container}>
+                <div className=' p-4 w-full '>
                     {posts.length === 0 ? (
                         <h2>Pas de poste ajouter pour le moment</h2>
                     ) : (
-                        <ul>
+                        <ul className=' items-center w-full md:grid md:grid-cols-2 gap-4'>
                             {posts.map((post, i) => (
                                 <PostCard post={post} key={i} />
                             ))}

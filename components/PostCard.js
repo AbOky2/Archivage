@@ -51,17 +51,17 @@ export default function PostCard({ post }) {
     };
     return (
         <>
-            <li>
-                <h3>{post.title}</h3>
-                <p>{post.content}</p>
+            <li className='bg-gray-600 mb-4 items-center p-4 flex flex-col rounded-xl w-full border border-1'>
+                <h3 className='text-[30px] font-bold'>{post.title}</h3>
+                <p className=' text-base'>{post.content}</p>
                 <small>{new Date(post.createdAt).toLocaleDateString()}</small>
                 <br />
                 {!post.published ? (
-                    <button type="button" onClick={() => publishPost(post._id)}>
+                    <button className='bg-red-900 p-4 rounded-xl mb-4 hover:bg-blue-900' type="button" onClick={() => publishPost(post._id)}>
                         {publishing ? 'Publishing' : 'Publish'}
                     </button>
                 ) : null}
-                <button type="button" onClick={() => deletePost(post['_id'])}>
+                <button className='bg-blue-900 p-4 rounded-xl hover:bg-cyan-500' type="button" onClick={() => deletePost(post['_id'])}>
                     {deleting ? 'Deleting' : 'Delete'}
                 </button>
             </li>
